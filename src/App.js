@@ -1,6 +1,9 @@
 import {Component} from 'react'
 import {v4} from 'uuid'
+import {MdDeleteForever} from 'react-icons/md'
+import {BsFillCheckCircleFill} from 'react-icons/bs'
 import {format} from 'date-fns'
+import 'animate.css'
 import './App.css'
 
 const listFromStorage = () => {
@@ -75,8 +78,6 @@ class App extends Component {
           Kumaran<span>&apos;</span>s Todo App
         </h1>
         <div className="container">
-          <h1>Add an Item...</h1>
-
           <input
             type="text"
             className="input-text"
@@ -86,17 +87,26 @@ class App extends Component {
           />
           <button
             type="button"
-            className="add-btn"
+            className="add-btn aws-btn"
             onClick={() => this.addItem(newItem)}
             disabled={!newItem.length}
           >
             Add Todo
           </button>
           <div className="list">
+            {list.length === 0 && (
+              <h1 className="empty-list animate__bounceInLeft animate__animated animate__repeat-1">
+                Add Your Todo<span>&apos;</span>s...
+              </h1>
+            )}
             <ul>
               {list.map(item => {
-                const isChecked = item.isDone ? 'deco' : ''
-
+                const isChecked = item.isDone
+                  ? 'deco animate__animated animate__lightSpeedOutRight animate__repeat-1'
+                  : ''
+                const task = !item.isDone
+                  ? 'none'
+                  : 'task-completed animate__flipInX animate__animated animate__repeat-1'
                 return (
                   <li key={item.id}>
                     <div className="div">
@@ -106,6 +116,11 @@ class App extends Component {
                         onChange={() => this.checkBox(item.id)}
                       />
                       <p className={isChecked}>{item.value}</p>
+                      <h4 className={task}>
+                        <span className="deco">{item.value}</span>
+                        -Task Completed
+                        <BsFillCheckCircleFill color="green" />
+                      </h4>
                     </div>
                     <div>
                       <button
@@ -114,6 +129,7 @@ class App extends Component {
                         onClick={() => this.deleteItem(item.id)}
                       >
                         Delete
+                        <MdDeleteForever size={18} />
                       </button>
                       <p className="date">on {item.date}</p>
                     </div>

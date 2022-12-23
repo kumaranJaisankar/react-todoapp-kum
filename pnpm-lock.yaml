@@ -2,10 +2,13 @@ dependencies:
   '@testing-library/jest-dom': 5.11.9
   '@testing-library/react': 11.2.5_react-dom@17.0.1+react@17.0.1
   '@testing-library/user-event': 12.6.2
+  animate.css: 4.1.1
   chalk: 4.1.0
   date-fns: 2.29.3
   react: 17.0.1
+  react-awesome-button: 7.0.5
   react-dom: 17.0.1_react@17.0.1
+  react-icons: 4.7.1_react@17.0.1
   uuid: 9.0.0
 devDependencies:
   eslint-config-airbnb: 18.2.1
@@ -1633,6 +1636,10 @@ packages:
         optional: true
     resolution:
       integrity: sha512-br5Qwvh8D2OQqSXpd1g/xqXKnK0r+Jz6qVKBbWmpUcrbGOxUrf39V5oZ1876084CGn18uMdR5uvPqBv9UqtBjQ==
+  /@rcaferati/wac/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-7dVbzvcfL9o4UnrCaNeoIs7Ri9Ol+OMfpYYCJJV1dfm+5+pVM6DrvFjPzqifd2ACVABpXmwTQKy9KFxNm/7IdA==
   /@rollup/plugin-node-resolve/7.1.3_rollup@1.32.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@1.32.1
@@ -2443,6 +2450,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+  /animate.css/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
   /ansi-colors/3.2.4:
     dev: true
     engines:
@@ -9897,6 +9908,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-0sF4ny9v/B7s6aoehwze9vJNWcmCemAUYBVasscVr92+UYiEqDXOxfKjXN685mDaMRNF3WdhHQs76oTODMocFA==
+  /react-awesome-button/7.0.5:
+    dependencies:
+      '@rcaferati/wac': 1.0.0
+    dev: false
+    resolution:
+      integrity: sha512-pNABRQsvnbd5rGL7mX9udWa0aPnXtP6hEL90/Cqjc/ERADpOMu3z6zix+AW/NOBp0NQoi9J+hhKoZS2dabs15g==
   /react-dev-utils/11.0.4:
     dependencies:
       '@babel/code-frame': 7.10.4
@@ -9943,6 +9960,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
+  /react-icons/4.7.1_react@17.0.1:
+    dependencies:
+      react: 17.0.1
+    dev: false
+    peerDependencies:
+      react: '*'
+    resolution:
+      integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
   /react-is/16.13.1:
     dev: true
     resolution:
@@ -12612,6 +12637,7 @@ specifiers:
   '@testing-library/jest-dom': 5.11.9
   '@testing-library/react': 11.2.5
   '@testing-library/user-event': 12.6.2
+  animate.css: 4.1.1
   chalk: 4.1.0
   date-fns: 2.29.3
   eslint-config-airbnb: 18.2.1
@@ -12622,6 +12648,8 @@ specifiers:
   npm-run-all: 4.1.5
   prettier: 2.2.1
   react: 17.0.1
+  react-awesome-button: 7.0.5
   react-dom: 17.0.1
+  react-icons: 4.7.1
   react-scripts: 4.0.3
   uuid: 9.0.0

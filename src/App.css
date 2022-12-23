@@ -48,6 +48,11 @@ p {
   font-size: 10px;
   margin: 0px;
 }
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
 .list li button {
   right: 0%;
@@ -72,6 +77,7 @@ p {
   padding: 10px;
   border-radius: 0.4rem;
   display: inline-block;
+  gap: 4px;
   border: none;
   cursor: pointer;
 }
@@ -80,6 +86,7 @@ p {
   text-align: center;
   color: #c1c1c1;
   font-size: 70px;
+  margin-bottom: 0px;
 }
 ul {
   margin: 0px;
@@ -103,4 +110,12 @@ ul {
   color: #fff;
   max-width: 500px;
   margin: auto;
+}
+.none {
+  display: none;
+}
+.task-completed {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
 }

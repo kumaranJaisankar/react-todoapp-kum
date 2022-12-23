@@ -10,10 +10,13 @@
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
     "@testing-library/user-event": "12.6.2",
+    "animate.css": "4.1.1",
     "chalk": "4.1.0",
     "date-fns": "2.29.3",
     "react": "17.0.1",
+    "react-awesome-button": "7.0.5",
     "react-dom": "17.0.1",
+    "react-icons": "4.7.1",
     "uuid": "9.0.0"
   },
   "devDependencies": {
